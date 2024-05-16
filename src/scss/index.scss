@@ -1,0 +1,11 @@
+@use '_default';
+@use './components/_header';
+@use './components/_hero';
+@use './components/_store.scss';
+@use './components/product';
+@use './components/_about';
+@use './components/_advantages';
+@use './components/_subscribe';
+@use './components/_footer';
+
+@import 'normalize.css';

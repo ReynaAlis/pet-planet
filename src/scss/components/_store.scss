@@ -1,0 +1,65 @@
+@use "../variables" as *;
+@use "../media" as *;
+
+.store {
+	padding: 120px 0;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
+
+	&__categories {
+		display: flex;
+		gap: 28px;
+	}
+
+	&__category-button {
+		color: $carrot;
+		padding-bottom: 10px;
+		position: relative;
+
+		&_active {
+			color: $green;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background-color: $green;
+			transform: scaleX(0);
+			transition: transform .3s ease-in-out;
+		}
+
+		&_active::after {
+			transform: scaleX(1);
+		}
+
+
+	}
+
+	&__cart-button {
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 52px;
+		line-height: 1.3;
+		margin-bottom: 32px;
+	}
+
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__product {
+	}
+}
