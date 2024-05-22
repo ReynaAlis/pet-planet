@@ -73,44 +73,6 @@
         right: 0;
         top: 0;
         bottom: 0;
-        border: 1px solid transparent;
-        border-radius: 40px;
-        padding: 16px 31px;
-        background: $purple;
-        font-weight: 700;
-        line-height: 1.4;
-        color: $light;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 4px;
-        min-width: 209px;
-        outline: none;
-
-        &:hover:not(:disabled) {
-            background-color: #981fd1;
-        }
-
-        &:focus-visible:not(:disabled) {
-            border-color: $carrot;
-        }
-
-        &:disabled {
-            opacity: 0.4;
-        }
-
-        @include mobile {
-            padding: 0;
-            min-width: 54px;
-        }
-
-        &::after {
-            content: "";
-            display: block;
-            width: 16px;
-            height: 16px;
-            background-image: url("/img/arrow.svg");
-        }
     }
 
     &__button-text {
